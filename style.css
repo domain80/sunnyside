@@ -246,14 +246,56 @@ p {
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		height: min-content;
+		height: max-content;
+		padding: 1.2rem 0;
 	}
 	.icon-hamburger {
 		width: 2rem;
 		height: 3rem;
 	}
+
 	.nav-links {
-		display: none;
+		z-index: 10;
+		position: absolute;
+		top: 25%;
+
+		height: max-content;
+		width: 84%;
+		background-color: var(--white);
+		color: var(--dark-grayish-blue);
+		padding: 3rem 2rem;
+
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+
+		transition: opacity 0.2s;
+		opacity: 1;
+		visibility: visible;
+	}
+	.nav-links.hidden {
+		opacity: 0;
+		visibility: hidden;
+	}
+	.nav-links::before {
+		content: "";
+		height: 0rem;
+		width: 0rem;
+
+		border-top: 4rem solid transparent;
+		border-bottom: 4rem solid transparent;
+		border-right: 4rem solid var(--white);
+
+		position: absolute;
+		top: -2.5rem;
+		right: 0;
+	}
+	.nav-link > button {
+		background-color: var(--yellow);
+		font-family: "Fraunces", serif;
+		text-transform: uppercase;
+		color: var(--very-dark-desaturated-blue);
+		font-size: 1rem;
 	}
 	.icon-logo {
 		width: 10rem;
