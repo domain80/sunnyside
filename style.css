@@ -14,7 +14,9 @@
 	/* ### Primary */
 
 	--soft-red: hsl(7, 99%, 70%);
+	--soft-red2: hsla(7, 99%, 70%, 0.445);
 	--yellow: hsl(51, 100%, 49%);
+	--yellow2: hsla(51, 100%, 49%, 0.486);
 	--dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
 	--dark-blue-photography-text: hsl(198, 62%, 26%);
 	--dark-moderate-cyan-footer: hsl(168, 34%, 41%);
@@ -83,6 +85,12 @@ button {
 	font-size: 1.2rem;
 
 	cursor: pointer;
+
+	background-color: var(--yellow);
+	font-family: "Fraunces", serif;
+	text-transform: uppercase;
+	color: var(--very-dark-desaturated-blue);
+	/* font-size: 1rem; */
 }
 button:hover {
 	background-color: var(--white-light);
@@ -166,10 +174,10 @@ article.flexed button::after {
 	left: 0;
 }
 article.flexed:first-child button::after {
-	background-color: var(--yellow);
+	background-color: var(--yellow2);
 }
 article.flexed:nth-child(2) button::after {
-	background-color: var(--soft-red);
+	background-color: var(--soft-red2);
 }
 
 .contained {
@@ -201,6 +209,8 @@ p {
 @media screen and (max-width: 1200px) {
 	body {
 		text-align: center;
+		font-size: 1.4rem;
+		line-height: 1.5em;
 	}
 	h1,
 	h2,
@@ -275,7 +285,6 @@ p {
 	}
 	.nav-links.hidden {
 		opacity: 0;
-		visibility: hidden;
 	}
 	.nav-links::before {
 		content: "";
@@ -289,13 +298,6 @@ p {
 		position: absolute;
 		top: -2.5rem;
 		right: 0;
-	}
-	.nav-link > button {
-		background-color: var(--yellow);
-		font-family: "Fraunces", serif;
-		text-transform: uppercase;
-		color: var(--very-dark-desaturated-blue);
-		font-size: 1rem;
 	}
 	.icon-logo {
 		width: 10rem;
@@ -311,7 +313,7 @@ p {
 	}
 
 	article.contained {
-		height: 40rem;
+		height: 45rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
