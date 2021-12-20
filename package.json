@@ -1,11 +1,19 @@
 {
-  "name": "sunnyside",
-  "version": "1.0.0",
-  "description": "frontend mentor challenge | landing page",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "David-Main",
-  "license": "ISC"
+	"homepage": "https:/David-Main.github.io/sunnyside",
+	"name": "sunnyside",
+	"version": "1.0.0",
+	"description": "frontend mentor challenge | landing page",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "node ./hello.js",
+		"deploy": "gh-pages -d dist"
+	},
+	"author": "David-Main",
+	"license": "ISC",
+	"devDependencies": {
+		"clean-css": "^5.2.2",
+		"gh-pages": "^3.2.3",
+		"html-minifier": "^4.0.0"
+	}
 }
