@@ -7,6 +7,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "node ./hello.js",
+		"predeploy": "node ./hello.js",
 		"deploy": "gh-pages -d dist"
 	},
 	"author": "David-Main",
