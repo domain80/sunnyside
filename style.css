@@ -206,7 +206,7 @@ p {
 /* ========================== */
 /* ========================== */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
 	body {
 		text-align: center;
 		font-size: 1.4rem;
@@ -387,7 +387,7 @@ p {
 /* ========================== */
 /* ========================== */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
 	.mobile {
 		display: none;
 	}
