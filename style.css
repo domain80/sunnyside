@@ -185,6 +185,7 @@ article.flexed:nth-child(2) button::after {
 	flex-direction: column;
 	padding: 26rem 25% 4rem;
 	text-align: center;
+	background-position: center;
 }
 .contained p {
 	margin-top: 2rem;
