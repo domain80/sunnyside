@@ -2,4 +2,4 @@
 Front-end mentor challenge
 project created with vanilla html, css and javascript
 
-## [View live site](https://david-main.github.io/sunnyside)
+## [View live site](https://1jack80.github.io/sunnyside)
